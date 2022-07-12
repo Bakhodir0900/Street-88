@@ -1,0 +1,112 @@
+@media (max-width:1100px) {
+    .intro__text {
+        text-align: justify;
+    }
+    .main__menu {
+        grid-template-columns: repeat( 2, 1fr);
+    }
+    .main__cards-desc {
+        text-align: justify;
+    }
+    }
+
+@media (max-width:761px) {
+    .menu-bar {
+        opacity: 1;
+    }
+    .header__pos {
+        display: none;
+        position: absolute;
+        top: -150%;
+        transition: all 0.5s;
+    }
+    #header-menu:checked ~ .header__pos {
+        position: relative;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .header__wrapper {
+        height: 100vh;
+        padding: 50px;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__nav-ul {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__logo {
+        margin-bottom: 90px;
+    }
+    .header__nav-link {
+        font-family: Raleway-Black;
+    }
+    .intro__title {
+        font-size: 60px;
+    }
+    .intro__wrapper {
+        align-items: center;
+    }
+    .intro__btns {
+        flex-flow: column;
+    }
+    .intro__price {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:640px) {
+    .main__menu {
+        grid-template-columns:  1fr;
+    }
+    .intro__title {
+        text-align: center;
+    }
+}
+@media (max-width:640px) {
+    .information__direction-icon {
+        font-size: 16;
+    }
+    .information__direction-text {
+        font-size: 12px;
+    }
+    .infomation__link {
+        font-size: 12px;
+    }
+    .main__desc {
+        font-size: 15px;
+        line-height: 20px;
+        font-family: var(--ral-400);
+    }
+}
+@media (max-width:420px) {
+    .information__direction-icon {
+        font-size: 13px;
+    }
+    .information__direction-text {
+        font-size: 10px;
+    }
+    .infomation__link {
+        font-size: 10px;
+    }
+    .main__navbar-link {
+        font-size: 12px;
+    }
+    .footer__contacts {
+        flex-flow: column wrap;
+    }
+    .footer__contacts img {
+        margin-bottom: 15px;
+    }
+    .intro__title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
